@@ -30,10 +30,11 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
   }
 
   body {
-    @apply bg-restaurant-cream text-restaurant-charcoal font-sans;
+    @apply bg-restaurant-cream text-restaurant-charcoal font-sans antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -42,6 +43,10 @@
 
   img {
     @apply max-w-full h-auto;
+  }
+
+  section {
+    @apply scroll-mt-16;
   }
 }
 
