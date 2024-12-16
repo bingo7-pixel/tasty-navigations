@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Menu from "@/components/Menu";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -7,7 +8,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
-      <div id="menu" className="h-screen bg-restaurant-cream" />
+      <Menu />
       <div id="gift-cards" className="h-screen bg-white" />
       <div id="delivery" className="h-screen bg-restaurant-cream" />
       <div id="pickup" className="h-screen bg-white" />
