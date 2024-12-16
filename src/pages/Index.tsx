@@ -1,6 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Menu from "@/components/Menu";
+import GiftCard from "@/components/GiftCard";
+import Delivery from "@/components/Delivery";
+import Pickup from "@/components/Pickup";
+import Reservation from "@/components/Reservation";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -9,10 +13,10 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Menu />
-      <div id="gift-cards" className="h-screen bg-white" />
-      <div id="delivery" className="h-screen bg-restaurant-cream" />
-      <div id="pickup" className="h-screen bg-white" />
-      <div id="reservation" className="h-screen bg-restaurant-cream" />
+      <GiftCard />
+      <Delivery />
+      <Pickup />
+      <Reservation />
       <Footer />
     </div>
   );
