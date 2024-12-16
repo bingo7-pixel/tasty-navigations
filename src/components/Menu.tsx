@@ -81,17 +81,19 @@ const drinkItems: MenuItem[] = [
 ];
 
 const MenuItemCard = ({ item }: { item: MenuItem }) => (
-  <Card className="overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
+  <Card className="group overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
     <div className="aspect-video w-full overflow-hidden">
       <img
         src={item.image}
         alt={item.name}
-        className="h-full w-full object-cover"
+        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
       />
     </div>
     <CardHeader>
       <div className="flex items-center justify-between">
-        <CardTitle className="text-xl">{item.name}</CardTitle>
+        <CardTitle className="text-xl transition-colors duration-300 group-hover:text-restaurant-gold">
+          {item.name}
+        </CardTitle>
         <span className="text-lg font-semibold text-restaurant-gold">
           {item.price}
         </span>
@@ -107,7 +109,7 @@ const MenuItemCard = ({ item }: { item: MenuItem }) => (
 const Menu = () => {
   return (
     <section className="container mx-auto px-4 py-16">
-      <h2 className="mb-12 text-center text-4xl font-bold text-restaurant-charcoal">
+      <h2 className="mb-12 text-center text-4xl font-bold text-restaurant-charcoal animate-fade-in-down">
         Our Menu
       </h2>
       <Tabs defaultValue="food" className="w-full">
